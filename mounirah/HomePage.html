@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Mounirah</title>
+    <link rel="icon" type="image/x-icon" href="imgs/WhatsApp Image 2023-02-28 at 8.21.48 PM.jpeg">
+    
+    <script> //slideshow script
+        document.addEventListener('DOMContentLoaded',function(){
+            let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        })
+        document.addEventListener('DOMContentLoaded',function(){
+            var myIndex = 0;
+            carousel();
+            function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 4000);    
+}
+        })
+    </script>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onmousemove = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
+
+    <style>
+        #x5{
+            background-color: rgb(220, 255, 255);
+        }
+
+        #x1,#x2{
+            text-align: center;
+        }
+        
+        #x2{
+            font-family:'Brush Script MT', cursive;
+            font-size: 60px;
+        }
+
+        .topnav {
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            overflow:hidden;
+            background-color: #000000;
+            margin: 0px;
+        }
+        
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        
+        .topnav a:hover,.dropdown:hover .dropbtn, .dropbtn:focus  {
+            background-color: #ddddddd0;
+            color: black;
+        }
+        
+        .topnav a.active {
+            background-color: #D4AF37;
+            color: white;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            cursor: pointer;
+            font-size: 21px;  
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: none;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .show {
+            display: block;
+        }
+        
+    </style>
+
+    <style>
+        * {box-sizing: border-box}
+        
+        body {font-family: Verdana, sans-serif; margin:0}
+
+        .mySlides {display:none}
+        
+        img {vertical-align: middle;}
+
+        .slideshow-container {
+        max-width: 2200px;
+        position: relative;
+        margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        font-size: 25px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        }
+
+        .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+        background-color:#D4AF37;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+        background-color: #D4AF37;
+        }
+
+        /* Fading animation */
+        .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+        }
+
+        
+        @media only screen and (max-width: 300px) {
+        .prev, .next,.text {font-size: 11px}
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+
+    <body style="background-color: rgba(245, 223, 144, 0.566);">
+        <h4 id="x1">UP TP 50% SALES!</h4>
+        <hr>
+        <h1 id="x2">Mounirah</h1>
+
+        <div class="topnav" >
+            <a class="active" href="HomePage.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn" onmouseenter="myFunction()">Shop
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+            </div> 
+            <a href="#contact">Sign Up</a>
+            <a href="#about">Contact Us</a>
+        </div>
+
+        <div class="slideshow-container" >
+            <div class="mySlides fade">
+            <!-- <div class="numbertext">1 / 3</div> -->
+            <img src="imgs/WhatsApp Image 2023-02-28 at 7.18.06 PM.jpeg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+            <!-- <div class="numbertext">2 / 3</div> -->
+            <img src="imgs/WhatsApp Image 2023-02-28 at 7.05.06 PM.jpeg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+            <!-- <div class="numbertext">3 / 3</div> -->
+            <img src="imgs/WhatsApp Image 2023-02-28 at 7.11.01 PM.jpeg" style="width:100%">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)"></a>
+            <a class="next" onclick="plusSlides(1)"></a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>  
+    </body>
+
+
+    
+    <footer id="x5">
+        More about us 
+        <a href="https://instagram.com/mounirah.eg?igshid=NmE0MzVhZDY=" target="_blank">
+            Instagram
+        </a>
+
+        <a href="https://www.facebook.com/profile.php?id=100083539531975&mibextid=ZbWKwL" target="_blank">
+            FaceBook
+        </a>
+    </footer>
+
+
+
+
+
+
+</body>
+
+</html>
