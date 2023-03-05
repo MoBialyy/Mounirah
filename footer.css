@@ -6,7 +6,7 @@
 .social-links ul
 {
     display: flex;
-    width: 150px;
+    width: 210px;
     height: 30px;
     margin: auto;
     padding: 10px;
@@ -15,7 +15,7 @@
     list-style: none;
 }
 .social-items a{
-    padding: 30px 30px;
+    padding: 20px 20px;
     font-size: 35px;
     color: #6cccc6;
     transition: all .25s;
@@ -28,7 +28,7 @@
     height: 70px;
     margin: auto;
     display: flex;
-    padding: 15px;
+    padding: 20px;
 }
 .quick-links ul{
     display: flex;
@@ -38,7 +38,7 @@
 }
 .quick-items a{
     text-decoration: none;
-    padding: 0px 15px;
+    padding: 0px 50px;
     font-size: 20px ;
     color: white;
     transition: .25s;
