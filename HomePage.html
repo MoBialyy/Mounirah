@@ -54,8 +54,7 @@
             myIndex++;
             if (myIndex > x.length) {myIndex = 1}    
             x[myIndex-1].style.display = "block";  
-            setTimeout(carousel, 4000);    
-}
+            setTimeout(carousel, 4000);    }
         })
     </script>
     <script>
@@ -63,7 +62,7 @@
             document.getElementById("myDropdown").classList.toggle("show");
         }
 
-        window.onmousemove = function(e) {
+        window.onmouseup = function(e) {
             if (!e.target.matches('.dropbtn')) {
             var myDropdown = document.getElementById("myDropdown");
                 if (myDropdown.classList.contains('show')) {
@@ -247,7 +246,7 @@
         <div class="topnav" >
             <a class="active" href="HomePage.html">Home</a>
             <div class="dropdown">
-                <button class="dropbtn" onmouseenter="myFunction()">Shop
+                <button class="dropbtn" onmouseup="myFunction()">Shop
                   <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content" id="myDropdown">
@@ -275,17 +274,8 @@
             <!-- <div class="numbertext">3 / 3</div> -->
             <img src="imgs/WhatsApp Image 2023-02-28 at 7.11.01 PM.jpeg" style="width:100%">
             </div>
+        </div>
             
-            <a class="prev" onclick="plusSlides(-1)"></a>
-            <a class="next" onclick="plusSlides(1)"></a>
-            
-            </div>
-            <br>
-            
-            <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
     </div>  
     </body>
 
