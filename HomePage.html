@@ -58,12 +58,13 @@
 }
         })
     </script>
+
     <script>
         function myFunction() {
             document.getElementById("myDropdown").classList.toggle("show");
         }
 
-        window.onmousemove = function(e) {
+        window.onclick = function(e) {
             if (!e.target.matches('.dropbtn')) {
             var myDropdown = document.getElementById("myDropdown");
                 if (myDropdown.classList.contains('show')) {
@@ -247,7 +248,7 @@
         <div class="topnav" >
             <a class="active" href="HomePage.html">Home</a>
             <div class="dropdown">
-                <button class="dropbtn" onmouseenter="myFunction()">Shop
+                <button class="dropbtn" onmouseup="myFunction()">Shop
                   <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content" id="myDropdown">
