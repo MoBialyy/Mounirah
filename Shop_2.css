@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css? family=Quicksand:wght@300;400;500;600;700;family=Roboto:wght@300;400;500;600;700;900%display=swap');
 :root{
-    --white-light: rgba (255, 255, 255, 0.5) ;
+    --white-light: rgba(255,255,255,0.5);
     --alice-blue: #f8f9fa;
     --carribean-green: #40c9a2;
     --gray: #ededed;
@@ -18,14 +18,14 @@ img{
     display: block;
 }
 .container{
-    width 88vw;
+    width: 90vw;
     margin: 0 auto;
 }
 .lg-title,
 .md-title,
 .sm-title{
     font-family: 'Roboto', sans-serif ;
-    padding: 0.6 rem 0;
+    padding: 0.6rem 0;
     text-transform: capitalize;
 }
 .lg-title{
@@ -53,7 +53,7 @@ img{
 }
 .products{
     background: var(--alice-blue);
-    padding: 3.2rem 0;
+    padding: 3rem 0;
 }
 .products .text-light{
     text-align: center;
@@ -71,8 +71,8 @@ img{
 }
 .product-img{
     background: var(--white-light);
-    box-shadow: 0 0 20px 10px var(--white-light);
-    width: 200px;
+    box-shadow: 0 0 30px 30px var(--white-light);
+    width: 300px;
     height: 200px;
     margin: 0 auto;
     border-radius: 50%;
@@ -81,17 +81,29 @@ img{
 .products-btns{
     display: flex;
     text-align: center;
-    justify-content: center;
+    justify-items: center;
     margin-top: 1.4rem;
     opacity: 1;
     transition: opacity 0.6s ease;
 }
-.btn-cart, .btn-buy {
-    text-align: center;
-    background: transparent;
+.btn-cart {
+    text-align: right;
+    background:transparent;
     border: 1px solid black;
-    padding: 0.8rem 0;
-    width: 125px;
+    padding: 1rem 0rem;
+    width: 260px;
+    font-family: inherit;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    transition: all 0.6s ease;
+}
+.btn-buy{
+    text-align: right;
+    background:transparent;
+    border: 1px solid black;
+    padding: 1rem 0rem;
+    width: 190px;
     font-family: inherit;
     text-transform: uppercase;
     cursor: pointer;
