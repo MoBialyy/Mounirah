@@ -81,32 +81,34 @@ img{
 .products-btns{
     display: flex;
     text-align: center;
-    justify-items: center;
+    justify-content: center;
     margin-top: 1.4rem;
     opacity: 1;
     transition: opacity 0.6s ease;
 }
 .btn-cart {
+    justify-content: center;
     text-align: right;
     background:transparent;
     border: 1px solid black;
     padding: 1rem 0rem;
-    width: 260px;
+    width: 300px;
     font-family: inherit;
     text-transform: uppercase;
     cursor: pointer;
-    border: none;
+    
     transition: all 0.6s ease;
 }
 .btn-buy{
+    justify-content: center;
     text-align: right;
     background:transparent;
     border: 1px solid black;
     padding: 1rem 0rem;
-    width: 190px;
+    width: 300px;
     font-family: inherit;
     text-transform: uppercase;
     cursor: pointer;
-    border: none;
+    
     transition: all 0.6s ease;
 }
