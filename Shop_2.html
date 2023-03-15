@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
     <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
     <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/05c36881ef.js" crossorigin="anonymous"></script>
@@ -12,11 +12,9 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.108.0">
     <title>Album example · Bootstrap v5.3</title>
-
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
     <meta http-equiv="X-UA-Compatible"content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<link href="Shop_2.css" rel="stylesheet"> -->
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">     
@@ -30,9 +28,73 @@
 <link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
 <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
 <meta name="theme-color" content="#712cf9">
-
-
-    <style>
+<!--footer-->
+  <style>
+      
+      .inner-footer{
+    margin: 0;
+    padding: 0;
+    background: #272727;
+}
+.social-links ul
+{
+    display: flex;
+    width: 200px;
+    height: 30px;
+    margin: auto;
+    padding: 10px;
+}
+.social-items{
+    list-style: none;
+}
+.social-items a{
+    padding: 20px 20px ;
+    font-size: 35px;
+    color: rgba(209, 198, 158, 0.673);
+    transition: all .25s;
+}
+.social-items a:hover{
+    color: rgba(194, 187, 161, 0.59);
+}
+.quick-links{
+    width: 480px;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    padding-bottom: 40px;
+}
+.quick-links ul{
+    display: flex;
+}
+.quick-items{
+    list-style: none;
+}
+.quick-items a{
+    text-decoration: none;
+    padding: 0px 50px;
+    font-size: 20px ;
+    color: white;
+    transition: .25s;
+}
+.outer-footer{
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    background-color: #3f3f3f;
+}
+.quick-items a:hover{
+    color: rgba(209, 198, 158, 0.673);
+}
+.float-end-mb-1{ 
+    
+    padding: 10px;
+    text-align: end;
+      }
+</style>
+<!-------------------------------------------------------------->
+<!--bootstrap-->
+<style>
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -83,11 +145,15 @@
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
       }
+      .album-py-5-bg-light{
+        background-color:rgba(194, 187, 161, 0.59);
+      }
     </style>
 
 </head>
-<body>
+<body style="background-color: rgba(209, 198, 158, 0.673);">
     <header>
+      
         <div class="collapse bg-dark" id="navbarHeader">
           <div class="container">
             <div class="row">
@@ -133,8 +199,7 @@
             </div>
           </div>
         </section>
-      
-        <div class="album py-5 bg-light">
+        <div class="album-py-5-bg-light">
           <div class="container">
       
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -145,10 +210,16 @@
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa-regular fa-heart"></i> Wishlist</button>
                       </div>
-                      <small class="text-muted">9 mins</small>
+                      <small class="text-muted"><small class="text-muted"><div class="rating">
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="far fa-star"></i></span>
+                      </div></small></small>
                     </div>
                   </div>
                 </div>
@@ -160,10 +231,16 @@
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa-regular fa-heart"></i> Wishlist</button>
                       </div>
-                      <small class="text-muted">9 mins</small>
+                      <small class="text-muted"><small class="text-muted"><div class="rating">
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="far fa-star"></i></span>
+                      </div></small></small>
                     </div>
                   </div>
                 </div>
@@ -175,56 +252,16 @@
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa-regular fa-heart"></i> Wishlist</button>
                       </div>
-                      <small class="text-muted">9 mins</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-      
-              <div class="col">
-                <div class="card shadow-sm">
-                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                  <div class="card-body">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                      </div>
-                      <small class="text-muted">9 mins</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card shadow-sm">
-                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                  <div class="card-body">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                      </div>
-                      <small class="text-muted">9 mins</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card shadow-sm">
-                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                  <div class="card-body">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                      </div>
-                      <small class="text-muted">9 mins</small>
+                      <small class="text-muted"><small class="text-muted"><div class="rating">
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="far fa-star"></i></span>
+                      </div></small></small>
                     </div>
                   </div>
                 </div>
@@ -237,10 +274,16 @@
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa-regular fa-heart"></i> Wishlist</button>
                       </div>
-                      <small class="text-muted">9 mins</small>
+                      <small class="text-muted"><small class="text-muted"><div class="rating">
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="far fa-star"></i></span>
+                      </div></small></small>
                     </div>
                   </div>
                 </div>
@@ -252,10 +295,16 @@
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa-regular fa-heart"></i> Wishlist</button>
                       </div>
-                      <small class="text-muted">9 mins</small>
+                      <small class="text-muted"><small class="text-muted"><div class="rating">
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="far fa-star"></i></span>
+                      </div></small></small>
                     </div>
                   </div>
                 </div>
@@ -267,10 +316,80 @@
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa-regular fa-heart"></i> Wishlist</button>
                       </div>
-                      <small class="text-muted">9 mins</small>
+                      <small class="text-muted"><small class="text-muted"><div class="rating">
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="far fa-star"></i></span>
+                      </div></small></small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col">
+                <div class="card shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                  <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa-regular fa-heart"></i> Wishlist</button>
+                      </div>
+                      <small class="text-muted"><div class="rating">
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="far fa-star"></i></span>
+                      </div></small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                  <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa-regular fa-heart"></i> Wishlist</button>
+                      </div>
+                      <small class="text-muted"><div class="rating">
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="far fa-star"></i></span>
+                      </div></small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                  <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa-regular fa-heart"></i> Wishlist</button>
+                      </div>
+                      <small class="text-muted"><div class="rating">
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="fas fa-star"></i></span>
+                        <span <i class="far fa-star"></i></span>
+                      </div></small>
                     </div>
                   </div>
                 </div>
@@ -283,20 +402,31 @@
       
       <footer class="text-muted py-5">
         <div class="container">
-          <p class="float-end mb-1">
-            <a href="#">Back to top</a>
-          </p>
-          <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-          <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="/docs/5.3/getting-started/introduction/">getting started guide</a>.</p>
         </div>
       </footer>
-      
-      
-          <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-      
-            
+    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
+    <footer class="footer">
+      <div class="inner-footer">
+      <div class="container">
+          <div class="social-links">
+              <ul>
+                  <li class="social-items"><a href="https://www.instagram.com/mounirah.eg/"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li class="social-items"><a href="facebook"><i class="fa-brands fa-facebook"></i></a></li>
+              </ul>
+              <div class="float-end-mb-1">
+                <a href="#">Back to top</a>
+              </div>
+          </div>
+          <div class="quick-links">
+              <ul>
+                  <li class="quick-items"><a href="">About Us</a></li>
+                  <li class="quick-items"><a href="">Contact Us</a></li>
+              </ul>
+      </div>
+      </div>
+    </footer>
 </body>
 </html>

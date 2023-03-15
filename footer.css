@@ -17,11 +17,11 @@
 .social-items a{
     padding: 20px 20px;
     font-size: 35px;
-    color: #6cccc6;
+    color: rgba(209, 198, 158, 0.673);
     transition: all .25s;
 }
 .social-items a:hover{
-    color: #54a39e;
+    color: rgba(194, 187, 161, 0.59);
 }
 .quick-links{
     width: 560px;
@@ -51,5 +51,5 @@
     background-color: #3f3f3f;
 }
 .quick-items a:hover{
-    color: #6cccc6;
+    color: rgba(209, 198, 158, 0.673);
 }
