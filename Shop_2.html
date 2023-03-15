@@ -148,12 +148,94 @@
       .album-py-5-bg-light{
         background-color:rgba(194, 187, 161, 0.59);
       }
+      #x5{
+            background-color: rgb(220, 255, 255);
+            height: 100px;
+            padding: 10px;
+        }
+
+        #x1,#x2{
+            text-align: center;
+        }
+        
+        #x2{
+            font-family:'Brush Script MT', cursive;
+            font-size: 60px;
+        }
+
+        .topnav {
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            overflow:hidden;
+            background-color: #000000;
+            margin: 0px;
+        }
+        
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        
+        .topnav a:hover,.dropdown:hover .dropbtn, .dropbtn:focus  {
+            background-color: #ddddddd0;
+            color: black;
+        }
+        
+        .topnav a.active {
+            background-color: #D4AF37;
+            color: white;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            cursor: pointer;
+            font-size: 21px;  
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: none;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .show {
+            display: block;
+        }
     </style>
 
 </head>
 <body style="background-color: rgba(209, 198, 158, 0.673);">
-    <header>
-      
+   <!-- <header>
         <div class="collapse bg-dark" id="navbarHeader">
           <div class="container">
             <div class="row">
@@ -183,8 +265,7 @@
             </button>
           </div>
         </div>
-      </header>
-      
+      </header>-->
       <main>
       
         <section class="py-5 text-center container">
@@ -199,6 +280,24 @@
             </div>
           </div>
         </section>
+        <p>
+        <div class="topnav" >
+          <a class="active" href="HomePage.html">Home</a>
+          <!-- <div class="dropdown">
+              <button class="dropbtn" onmouseup="myFunction()">Shop
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content" id="myDropdown">
+                <a href="#">La plAGE</a>
+                <a href="#">SOLASTA</a>
+                <a href="#">Pink PANTHER</a>
+              </div>
+          </div>  -->
+          <a href="Shop_2.html">Shop</a>
+          <a href="login.html">Log In</a>
+          <a href="#about">Cart</a>
+      </div>
+    </p>
         <div class="album-py-5-bg-light">
           <div class="container">
       
