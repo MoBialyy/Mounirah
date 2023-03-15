@@ -36,6 +36,7 @@
     padding: 0;
     background: #272727;
 }
+body {font-family: Verdana, sans-serif; margin:0}
 .social-links ul
 {
     display: flex;
@@ -92,6 +93,83 @@
     text-align: end;
       }
 </style>
+<style>
+* {box-sizing: border-box}
+        
+        body {font-family: Verdana, sans-serif; margin:0}
+
+        .mySlides {display:none}
+        
+        img {vertical-align: middle;}
+
+        .slideshow-container {
+        max-width: 2200px;
+        position: relative;
+        margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        font-size: 25px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        }
+
+        .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+        background-color:#D4AF37;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+        background-color: #D4AF37;
+        }
+
+        /* Fading animation */
+        .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+        }
+
+        
+        @media only screen and (max-width: 300px) {
+        .prev, .next,.text {font-size: 11px}
+        }
+        .header-2{
+    height: 100px ;
+}
+    </style>
+
+
 <!-------------------------------------------------------------->
 <!--bootstrap-->
 <style>
@@ -267,8 +345,13 @@
         </div>
       </header>-->
       <main>
-      
-        <section class="py-5 text-center container">
+        <body style="background-color: rgba(209, 198, 158, 0.673);">
+          <h4 id="x1">UP TP 50% SALES!</h4>
+          <hr>
+          <div class=" header-2">
+          <h1 id="x2">Mounirah</h1>
+        </div>
+       <!-- <section class="py-5 text-center container">
           <div class="row py-lg-5">
             <div class="col-lg-6 col-md-8 mx-auto">
               <h1 class="fw-light">Album example</h1>
@@ -279,20 +362,10 @@
               </p>
             </div>
           </div>
-        </section>
+        </section>-->
         <p>
         <div class="topnav" >
           <a class="active" href="HomePage.html">Home</a>
-          <!-- <div class="dropdown">
-              <button class="dropbtn" onmouseup="myFunction()">Shop
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content" id="myDropdown">
-                <a href="#">La plAGE</a>
-                <a href="#">SOLASTA</a>
-                <a href="#">Pink PANTHER</a>
-              </div>
-          </div>  -->
           <a href="Shop_2.html">Shop</a>
           <a href="login.html">Log In</a>
           <a href="#about">Cart</a>
