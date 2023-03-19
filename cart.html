@@ -56,7 +56,7 @@
         background-color: white;
         color: black;
         border: 2px solid #272727;;
-        padding: 10px 20px;
+        padding: 10px 10px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
@@ -161,10 +161,10 @@
         <div class="small-container cart-page">
             <table>
                 <tr>
-                    <th style="text-align: center;"><b>Product</b></th>
-                    <th><b>Item Price</b></th>
+                    <th style="text-align: center; border:0em;" ><b>Product</b></th>
+                    <th ><b>Item Price</b></th>
                     <th><b>Quantity</b></th>
-                    <th><b>Subtotal</b></th>
+                    <th style="text-align:left"><b>Subtotal</b></th>
                 </tr>
                 <tr>
                 <td>
@@ -173,13 +173,13 @@
                           <div>
                             <p style="margin:10px 10px;"><strong>Riya Scarf</strong></p>
                             
-                            <button onclick="removeItem()" id="x7" href="">Remove</button>
+                            <button onclick="removeItem()" id="x7" href="" style="font-size: larger;">Remove</button>
                           </div>
                        </div>
                 </td>
                 <td style="font-weight: bold;">EGP 300</td>
-                <td><input class="Quantity" type="number" value ="1"></td>
-                <td style="font-weight: bold;">EGP 300</td>
+                <td><input class="Quantity" type="number" style="font-size: larger;" value ="1"></td>
+                <td style="font-weight: bold;" style="text-align:left">EGP 300</td>
                 </tr>
 
                <!-- 2nd product -->
@@ -190,13 +190,13 @@
                           <div>
                             <p style="margin:10px 10px;"><strong>Universe Scarf</strong></p>
                             
-                            <button onclick="removeItem()" id="x7" href="">Remove</button>
+                            <button onclick="removeItem()" id="x7" href="" style="font-size: larger;">Remove</button>
                           </div>
                        </div>
                 </td>
                 <td style="font-weight: bold;">EGP 350</td>
-                <td><input class="Quantity" type="number" value ="1"></td>
-                <td style="font-weight: bold;">EGP 350</td>
+                <td><input class="Quantity" type="number" style="font-size: larger;" value ="1"></td>
+                <td style="font-weight: bold;" style="text-align:left">EGP 350</td>
                 </tr>
 
          <!-- 3rd product -->
@@ -207,16 +207,16 @@
                           <div>
                             <p style="margin:10px 10px;"><strong>Moon Phases Scarf</strong></p>
                             
-                            <button onclick="removeItem()" id="x7" href="">Remove</button>
+                            <button onclick="removeItem()" id="x7" href="" style="font-size: larger;">Remove</button>
                           </div>
                        </div>
                 </td>
                 <td style="font-weight: bold;">EGP 400</td>
-                <td><input class="Quantity" type="number" value ="1"></td>
-                <td style="font-weight: bold;">EGP 400</td>
+                <td><input class="Quantity" type="number" style="font-size: larger;" value ="1"></td>
+                <td style="font-weight: bold;" style="text-align:left">EGP 400</td>
                 </tr>
             </table>
-            <div style="font-size: larger;" class="Total-price">
+            <div style="font-size: larger" class="Total-price">
             <table>
                 <tr>
                     <td>Subtotal</td>
