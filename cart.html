@@ -16,6 +16,13 @@
             margin: 0px;
         }
     </style>
+
+    <script>
+        function removeItem(){
+            alert('Item removed!');
+        }
+    </script>
+
     <title>Mounirah</title>
     <link rel="icon" type="image/x-icon" href="imgs/WhatsApp Image 2023-02-28 at 8.21.48 PM.jpeg">
 
@@ -155,7 +162,7 @@
             <table>
                 <tr>
                     <th style="text-align: center;"><b>Product</b></th>
-                    <th><b>Price</b></th>
+                    <th><b>Item Price</b></th>
                     <th><b>Quantity</b></th>
                     <th><b>Subtotal</b></th>
                 </tr>
@@ -164,15 +171,15 @@
                     <div class="cart-info">
                         <img src="imgs/WhatsApp Image 2023-02-28 at 7.05.06 PM.jpeg"alt="">
                           <div>
-                            <p><strong>Riya Scarf</strong></p>
+                            <p style="margin:10px 10px;"><strong>Riya Scarf</strong></p>
                             
-                            <a id="x7" href="">Remove</a>
+                            <button onclick="removeItem()" id="x7" href="">Remove</button>
                           </div>
                        </div>
                 </td>
-                <td>EGP 300</td>
+                <td style="font-weight: bold;">EGP 300</td>
                 <td><input class="Quantity" type="number" value ="1"></td>
-                <td>EGP 300</td>
+                <td style="font-weight: bold;">EGP 300</td>
                 </tr>
 
                <!-- 2nd product -->
@@ -181,15 +188,15 @@
                     <div class="cart-info">
                         <img src="imgs/WhatsApp Image 2023-03-08 at 8.43.54 PM.jpeg" alt="">
                           <div>
-                            <p><strong>Universe Scarf</strong></p>
+                            <p style="margin:10px 10px;"><strong>Universe Scarf</strong></p>
                             
-                            <a id="x7" href="">Remove</a>
+                            <button onclick="removeItem()" id="x7" href="">Remove</button>
                           </div>
                        </div>
                 </td>
-                <td>EGP 350</td>
+                <td style="font-weight: bold;">EGP 350</td>
                 <td><input class="Quantity" type="number" value ="1"></td>
-                <td>EGP 350</td>
+                <td style="font-weight: bold;">EGP 350</td>
                 </tr>
 
          <!-- 3rd product -->
@@ -198,15 +205,15 @@
                     <div class="cart-info">
                         <img src="imgs/WhatsApp Image 2023-03-08 at 8.42.59 PM.jpeg"alt="">
                           <div>
-                            <p><strong>Moon Phases Scarf</strong></p>
+                            <p style="margin:10px 10px;"><strong>Moon Phases Scarf</strong></p>
                             
-                            <a id="x7" href="">Remove</a>
+                            <button onclick="removeItem()" id="x7" href="">Remove</button>
                           </div>
                        </div>
                 </td>
-                <td>EGP 400</td>
+                <td style="font-weight: bold;">EGP 400</td>
                 <td><input class="Quantity" type="number" value ="1"></td>
-                <td>EGP 400</td>
+                <td style="font-weight: bold;">EGP 400</td>
                 </tr>
             </table>
             <div style="font-size: larger;" class="Total-price">
