@@ -1,55 +1,64 @@
-.inner-footer{
+.inner-footer {
     margin: 0;
     padding: 0;
     background: #272727;
 }
-.social-links ul
-{
+
+.social-links ul {
     display: flex;
     width: 210px;
     height: 30px;
     margin: auto;
     padding: 10px;
 }
-.social-items{
+
+.social-items {
     list-style: none;
 }
-.social-items a{
+
+.social-items a {
     padding: 20px 20px;
     font-size: 35px;
     color: rgba(209, 198, 158, 0.673);
     transition: all .25s;
 }
-.social-items a:hover{
+
+.social-items a:hover {
     color: rgba(194, 187, 161, 0.59);
 }
-.quick-links{
+
+.quick-links {
     width: 560px;
     height: 70px;
     margin: auto;
     display: flex;
     padding: 20px;
 }
-.quick-links ul{
+
+.quick-links ul {
     display: flex;
 }
-.quick-items{
+
+.quick-items {
     list-style: none;
 }
-.quick-items a{
+
+.quick-items a {
     text-decoration: none;
     padding: 0px 50px;
-    font-size: 20px ;
+    font-size: 20px;
     color: white;
     transition: .25s;
 }
-.outer-footer{
+
+.outer-footer {
     padding: 10px;
     text-align: center;
     color: white;
     font-size: 18px;
     background-color: #3f3f3f;
 }
-.quick-items a:hover{
+
+.quick-items a:hover {
     color: rgba(209, 198, 158, 0.673);
 }
