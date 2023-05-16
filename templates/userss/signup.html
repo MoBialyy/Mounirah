@@ -1,0 +1,257 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    
+    
+    <title>Mounirah || Sign Up</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'images/WhatsApp Image 2023-02-28 at 8.21.48 PM.jpeg' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link href="{% static 'css/styleofshop.css' &}" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="imgs/WhatsApp Image 2023-02-28 at 8.21.48 PM.jpeg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background: rgba(209, 198, 158, 0.673);
+        }
+        .row{
+            background: rgba(255, 255, 255, 0.673);
+            border-radius: 20px;
+            box-shadow: 12px 12px 22px gray;
+        }
+        img{
+            border-top-left-radius:20px ;
+            border-bottom-left-radius:20px ;
+        }
+        .btn1{
+            border: none;
+            outline: none;
+            height: 50px;
+            width: 100%;
+            background-color: black;
+            color: white;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .btn1:hover{
+            background: white;
+            border: 1px solid;
+            color: black;
+        }
+    </style>
+
+    <style>
+        #x5{
+            background-color: rgb(220, 255, 255);
+            height: 100px;
+            padding: 10px;
+        }
+
+        #x1,#x2{
+            text-align: center;
+        }
+        #x1{
+        font-size:16px;
+
+        margin: 21.28px 0px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;
+      }
+        #x2{
+            font-family:'Brush Script MT', cursive;
+            font-size: 60px;
+            margin: 40.2px 0px;
+    font-weight: bolder;
+    color: #000000;
+        }
+
+        .topnav {
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            overflow:hidden;
+            background-color: #000000;
+            margin: 0px;
+            line-height: 30px;
+        }
+        
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        
+        .topnav a:hover,.dropdown:hover .dropbtn, .dropbtn:focus  {
+            background-color: #ddddddd0;
+            color: black;
+        }
+        
+        .topnav a.active {
+            background-color: #D4AF37;
+            color: white;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            cursor: pointer;
+            font-size: 21px;  
+            border: none;
+            outline: none;
+            color: white;
+            padding: 15px 15px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: none;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .show {
+            display: block;
+        }
+        
+    </style>
+    
+    <!--<style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background: rgba(209, 198, 158, 0.673);
+        }
+        .row{
+            background: rgba(255, 255, 255, 0.673);
+            border-radius: 20px;
+            box-shadow: 12px 12px 22px gray;
+        }
+        img{
+            border-top-left-radius:20px ;
+            border-bottom-left-radius:20px ;
+        }
+        .btn1{
+            border: none;
+            outline: none;
+            height: 50px;
+            width: 100%;
+            background-color: black;
+            color: white;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .btn1:hover{
+            background: white;
+            border: 1px solid;
+            color: black;
+        }
+    </style>-->
+</head>
+
+<body>
+    
+    <section class="form my-4 mx-5">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-lg-5">
+                    <img src="{% static 'images/WhatsApp Image 2023-03-08 at 8.41.08 PM.jpeg' %}" class="img-fluid " alt="">
+                </div>
+                <div class="col-lg-7 px-5 pt-5">
+                    <h1 style="font-family:'Brush Script MT', cursive; font-size: 60px;" class="font-weight-bold py-3">Mounirah</h1>
+                    <h4>Sign Up</h4>
+                    
+                    {% if form.errors %}
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <strong>There was an error with your form... </strong> 
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                        <p></p>
+                    {% endif %}
+                    
+                    
+                    
+                    <form action="{% url 'register_user' %}" method="post">
+                        {% csrf_token %}
+
+                        <!--{{ form.as_p }}-->
+
+                        <div class="form-row">
+                            <div class="col-lg-7">
+                                <input  type="text" name="username" maxlength="150" autocapitalize="none" autocomplete="username" autofocus="" required="" id="id_username" placeholder="Username" class="form-control my-3 p-3">
+                            </div>
+                        </div>
+                        
+
+                        <!--<div class="form-row">
+                            <div class="col-lg-7">
+                                <input type="email" placeholder="Email Address" class="form-control my-3 p-3">
+                            </div>
+                        </div>-->
+
+                        <div class="form-row">
+                            <div class="col-lg-7">
+                                <input  type="password" name="password1" autocomplete="new-password" required="" id="id_password1" placeholder="Password" class="form-control my-3 p-3">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col-lg-7">
+                                    <input type="password" name="password2" autocomplete="new-password" required="" id="id_password2" placeholder="Password Confirmation" class="form-control my-3 p-3">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-lg-7">
+                                <button type="submit" class="btn1 mt-3 mb-4">Sign Up</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
+
+{% endblock content %}
